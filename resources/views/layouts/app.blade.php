@@ -55,6 +55,9 @@
         @can('roles.manage')
             <a href="{{ route('admin.roles.index') }}">Roles</a>
         @endcan
+        @can('viewApiDocs')
+            <a href="{{ route('scramble.docs.ui') }}">API docs</a>
+        @endcan
     </nav>
     <div class="user">
         <span>{{ auth()->user()->name }}</span>
